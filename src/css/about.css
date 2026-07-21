@@ -110,6 +110,10 @@
 		line-height: 48px;
 	}
 
+	.about-title span::after {
+		bottom: 0;
+	}
+
 	.about-subtitle {
 		font-size: 18px;
 		line-height: 30px;
@@ -128,6 +132,13 @@
 }
 
 @media only screen and (min-width: 1280px) {
+	.about-title span::after {
+		width: 62px;
+		height: 20px;
+		bottom: 2px;
+		left: -4px;
+	}
+	
 	.about-list {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 		grid-template-rows: repeat(2, 1fr);
