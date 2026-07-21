@@ -1,19 +1,13 @@
-<header class="header">
+<header id="header" class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+    <a class="header-logo" href="#">
+      english<span class="header-logo-span">excellence</span>.
+    </a>
+    <svg class="header-menu-icon mobile" width="32" height="32">
+      <use href="./img/icons.svg#menu-icon"></use>
+    </svg>
+    <svg class="header-menu-icon tablet" width="40" height="28">
+      <use href="./img/icons.svg#menu-icon"></use>
+    </svg>
   </div>
 </header>
