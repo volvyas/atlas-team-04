@@ -17,11 +17,12 @@ img {
 }
 
 a {
+    color: currentColor;
     text-decoration: none;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #434455;
+    color: #12141780;
     background-color: #FFF;
 }
