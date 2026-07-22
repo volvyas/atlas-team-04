@@ -9,6 +9,10 @@
   --transition-duration-and-func: 250ms ease-out;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
     color: var(--color-black);
