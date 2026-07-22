@@ -13,6 +13,10 @@ body {
     background-color: #FFF;
 }
 
+a:focus {
+    outline: none;
+}
+
 .section-subtitle {
     line-height: 1.7;
     text-align: center;
