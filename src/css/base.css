@@ -7,6 +7,10 @@
   --color-black: #121417;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
     color: var(--color-black);
