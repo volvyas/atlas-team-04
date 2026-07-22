@@ -1,0 +1,133 @@
+.lessons {
+    padding: 150px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+.lessons-title {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: 121417;
+}
+
+.highlighted {
+    position: relative;
+}
+
+.highlighted::after {
+    content: '';
+    position: absolute;
+    border-radius: 8px;
+    width: 144px;
+    height: 20px;
+    background-color: #bee8cc;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+
+.lessons-text {
+    font-family: "Manrope", sans-serif;
+    ;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: rgba(18, 20, 23, 0.5);
+    max-width: 665px;
+    margin: 0 auto;
+}
+
+.lessons-top {
+
+    margin-bottom: 64px;
+}
+
+.lessons-cards {
+    display: flex;
+    gap: 32px;
+}
+
+.lessons-item {
+    border: 1px solid #4dc274;
+    border-radius: 30px;
+    text-align: center;
+    padding: 32px;
+    min-height: 404px;
+}
+
+.lessons-item:hover {
+    background-color: #4dc274;
+    transition: 0.3s ease;
+}
+
+.lessons-item:hover .lessons-item-subtitle {
+    color: #fff;
+}
+
+.lessons-item:hover .lessons-item-title {
+    color: #fff;
+}
+
+.lessons-item:hover .lessons-item-text {
+    color: #fff;
+}
+
+
+.lessons-item:hover .lessons-button {
+    border: #f3f5f6;
+
+}
+
+
+
+.lessons-item-subtitle {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #121417;
+}
+
+.lessons-item-title {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 138%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #121417;
+}
+
+.lessons-item-text {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(18, 20, 23, 0.5);
+}
+
+.lessons-button {
+    border-radius: 12px;
+    padding: 16px 39px;
+    width: 256px;
+    height: 60px;
+    background: #4dc274;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    color: #fff;
+    border: none;
+}
