@@ -1,0 +1,93 @@
+/**
+  |============================
+  | Our teachers
+  |============================
+  | Section title / subtitle / underline come from base.css
+  | (.section-title, .section-subtitle, .section-title-underline).
+  | Container comes from container.css. Nothing global is redefined here.
+*/
+
+.teachers {
+  margin-block: 80px;
+}
+
+/* base.css .section-subtitle has no font-size/color yet — completing it locally */
+.teachers-subtitle {
+  max-width: 709px;
+  font-size: 14px;
+  line-height: 24px;
+  color: color-mix(in srgb, var(--color-black, #121417) 50%, transparent);
+}
+
+.teachers-list {
+  display: grid;
+  grid-template-columns: minmax(0, 335px);
+  justify-content: center;
+  gap: 40px;
+}
+
+.teachers-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.teachers-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.teachers-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.teachers-name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: var(--color-black, #121417);
+}
+
+.teachers-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: color-mix(in srgb, var(--color-black, #121417) 50%, transparent);
+}
+
+@media only screen and (min-width: 768px) {
+  .teachers {
+    margin-block: 100px;
+  }
+
+  .teachers-subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 64px;
+  }
+
+  .teachers-list {
+    grid-template-columns: repeat(2, minmax(0, 272px));
+    gap: 32px;
+  }
+
+  .teachers-text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .teachers {
+    margin-block: 150px;
+  }
+
+  .teachers-list {
+    grid-template-columns: repeat(4, minmax(0, 232px));
+  }
+}
