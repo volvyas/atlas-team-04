@@ -2,11 +2,6 @@
     padding: 150px;
 }
 
-.container {
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
 
 .lessons-title {
     font-family: "Manrope", sans-serif;
@@ -15,7 +10,7 @@
     line-height: 120%;
     letter-spacing: -0.02em;
     text-align: center;
-    color: 121417;
+    color: #121417;
 }
 
 .highlighted {
@@ -57,7 +52,7 @@
 }
 
 .lessons-item {
-    border: 1px solid #4dc274;
+    border: 1px solid var(--color-green);
     border-radius: 30px;
     text-align: center;
     padding: 32px;
@@ -65,20 +60,20 @@
 }
 
 .lessons-item:hover {
-    background-color: #4dc274;
+    background-color: var(--color-green);
     transition: 0.3s ease;
 }
 
 .lessons-item:hover .lessons-item-subtitle {
-    color: #fff;
+    color: var(--color-white);
 }
 
 .lessons-item:hover .lessons-item-title {
-    color: #fff;
+    color: var(--color-white);
 }
 
 .lessons-item:hover .lessons-item-text {
-    color: #fff;
+    color: var(--color-white);
 }
 
 
@@ -87,8 +82,6 @@
 
 }
 
-
-
 .lessons-item-subtitle {
     font-family: "Manrope", sans-serif;
     font-weight: 700;
@@ -96,7 +89,7 @@
     line-height: 120%;
     letter-spacing: -0.02em;
     text-align: center;
-    color: #121417;
+    color: var(--color-black);
 }
 
 .lessons-item-title {
@@ -106,7 +99,7 @@
     line-height: 138%;
     letter-spacing: -0.02em;
     text-align: center;
-    color: #121417;
+    color: var(--color-black);
 }
 
 .lessons-item-text {
@@ -123,11 +116,11 @@
     padding: 16px 39px;
     width: 256px;
     height: 60px;
-    background: #4dc274;
+    background: var(--color-green);
     font-family: "Manrope", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 156%;
-    color: #fff;
+    color: var(--color-white);
     border: none;
 }
