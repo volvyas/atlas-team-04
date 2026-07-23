@@ -5,16 +5,36 @@
   --color-linear-start: #4DC274;
   --color-linear-end: #BEE8CC;
   --color-black: #121417;
+  --color-white: #fff;
+  --transition-duration-and-func: 250ms ease-out;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Manrope', sans-serif;
     color: var(--color-black);
-    background-color: #FFF;
+    background-color: var(--color-white);
 }
 
 .section {
     padding-bottom: 80px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .section-subtitle {
