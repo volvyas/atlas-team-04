@@ -28,7 +28,7 @@
 .hero-title {
   width: 100%;
   text-align: left;
-  padding: 425px 00px 0px;
+  padding: 425px 0 0;
   font-weight: 700;
   font-size: 38px;
   line-height: 1.05;
@@ -36,7 +36,7 @@
   margin-bottom: 40px;
 }
 
-.accent {
+.hero-accent {
   color: var(--color-linear-end);
 }
 
@@ -88,7 +88,13 @@
 
 @media screen and (min-resolution: 192dpi) {
   .hero-container {
-    background-image: url('../img/webp/hero-mobile@2x.webp');
+    background-image:
+      linear-gradient(
+        357.37deg,
+        rgba(0, 0, 0, 0.4) 29.98%,
+        rgba(0, 0, 0, 0) 64.31%
+      ),
+      url('../img/webp/hero-mobile@2x.webp');
   }
 }
 
@@ -99,12 +105,20 @@
 
   .hero-container {
     align-items: flex-start;
-    background-image: url('../img/webp/hero-tablet@1x.webp');
-    padding: 0px 32px;
+
+    background-image:
+      linear-gradient(
+        357.37deg,
+        rgba(0, 0, 0, 0.4) 29.98%,
+        rgba(0, 0, 0, 0) 64.31%
+      ),
+      url('../img/webp/hero-tablet@1x.webp');
+
+    padding: 0 32px;
   }
 
   .hero-title {
-    padding: 260px 0px 0px;
+    padding: 260px 0 0;
     font-size: 60px;
     line-height: 1.16;
     color: var(--color-white);
@@ -121,7 +135,13 @@
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero-container {
-    background-image: url('../img/webp/hero-tablet@2x.webp');
+    background-image:
+      linear-gradient(
+        357.37deg,
+        rgba(0, 0, 0, 0.4) 29.98%,
+        rgba(0, 0, 0, 0) 64.31%
+      ),
+      url('../img/webp/hero-tablet@2x.webp');
   }
 }
 
@@ -132,12 +152,18 @@
 
   .hero-container {
     align-items: flex-start;
-    padding: 0px 64px;
-    background-image: url('../img/webp/hero-desktop@1x.webp');
+    padding: 0 64px;
+    background-image:
+      linear-gradient(
+        357.37deg,
+        rgba(0, 0, 0, 0.4) 29.98%,
+        rgba(0, 0, 0, 0) 64.31%
+      ),
+      url('../img/webp/hero-desktop@1x.webp');
   }
 
   .hero-title {
-    padding: 260px 0px 0px;
+    padding: 260px 0 0;
     font-size: 60px;
     line-height: 1.16;
     max-width: 564px;
@@ -153,6 +179,12 @@
 
 @media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .hero-container {
-    background-image: url('../img/webp/hero-desktop@2x.webp');
+    background-image:
+      linear-gradient(
+        357.37deg,
+        rgba(0, 0, 0, 0.4) 29.98%,
+        rgba(0, 0, 0, 0) 64.31%
+      ),
+      url('../img/webp/hero-desktop@2x.webp');
   }
 }
