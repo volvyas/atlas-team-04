@@ -32,12 +32,12 @@
   font-weight: 700;
   font-size: 38px;
   line-height: 1.05;
-  color: #fff;
+  color: var(--color-white);
   margin-bottom: 40px;
 }
 
 .accent {
-  color: #bee8cc;
+  color: var(--color-linear-end);
 }
 
 .hero-button {
@@ -47,7 +47,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
-  color: #fff;
+  color: var(--color-white);
   background-color: var(--color-green);
   cursor: pointer;
   border: none;
@@ -66,7 +66,7 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--color-white);
   position: absolute;
   bottom: 14px;
   right: 14px;
@@ -83,7 +83,7 @@
 }
 
 .hero-scroll-icon:hover {
-  fill: #fff;
+  fill: var(--color-white);
 }
 
 @media screen and (min-resolution: 192dpi) {
@@ -107,7 +107,7 @@
     padding: 260px 0px 0px;
     font-size: 60px;
     line-height: 1.16;
-    color: #fff;
+    color: var(--color-white);
     max-width: 488px;
   }
 
@@ -125,7 +125,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .section.hero {
     padding: 0 64px;
   }
@@ -151,7 +151,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
   .hero-container {
     background-image: url('../img/webp/hero-desktop@2x.webp');
   }
