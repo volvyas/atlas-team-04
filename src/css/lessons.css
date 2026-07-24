@@ -1,5 +1,5 @@
 .lessons {
-    padding: 150px;
+    padding: 150px 0;
 }
 
 
@@ -31,7 +31,6 @@
 
 .lessons-text {
     font-family: "Manrope", sans-serif;
-    ;
     font-weight: 400;
     font-size: 18px;
     line-height: 167%;
@@ -48,15 +47,23 @@
 
 .lessons-cards {
     display: flex;
-    gap: 32px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .lessons-item {
+    box-sizing: border-box;
     border: 1px solid var(--color-green);
     border-radius: 30px;
     text-align: center;
     padding: 32px;
     min-height: 404px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 335px;
 }
 
 .lessons-item:hover {
@@ -78,7 +85,7 @@
 
 
 .lessons-item:hover .lessons-button {
-    border: #f3f5f6;
+    border: 1px solid #FFFFFF66
 
 }
 
@@ -90,6 +97,7 @@
     letter-spacing: -0.02em;
     text-align: center;
     color: var(--color-black);
+    margin-bottom: 16px;
 }
 
 .lessons-item-title {
@@ -100,6 +108,7 @@
     letter-spacing: -0.02em;
     text-align: center;
     color: var(--color-black);
+    margin-bottom: 16px;
 }
 
 .lessons-item-text {
@@ -109,18 +118,44 @@
     line-height: 150%;
     text-align: center;
     color: rgba(18, 20, 23, 0.5);
+    margin-bottom: 32px;
 }
 
 .lessons-button {
+    display: inline-block;
+    margin-top: auto;
     border-radius: 12px;
     padding: 16px 39px;
-    width: 256px;
-    height: 60px;
     background: var(--color-green);
     font-family: "Manrope", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 156%;
     color: var(--color-white);
-    border: none;
+    border: 1px solid #FFFFFF66;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .lessons-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .lessons-item {
+        flex: 0 0 336px;
+        max-width: 336px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .lessons-cards {
+        flex-wrap: nowrap;
+    }
+
+    .lessons-item {
+        flex-basis: 320px;
+        max-width: 320px;
+    }
 }
