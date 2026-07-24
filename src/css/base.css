@@ -23,6 +23,18 @@ body {
     padding-bottom: 80px;
 }
 
+@media (min-width: 768px) {
+    .section {
+        padding-bottom: 100px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .section {
+        padding-bottom: 150px;
+    }
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
