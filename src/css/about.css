@@ -1,18 +1,6 @@
 .about {
 	margin-block: 80px;
 }
-
-.about-title {
-	margin-bottom: 16px;
-	color: var(--color-black, #121417);
-	font-family: 'Manrope', sans-serif;
-	font-size: 32px;
-	font-weight: 700;
-	line-height: 36px;
-	letter-spacing: -0.02em;
-	text-align: center;
-}
-
 .about-title span {
 	position: relative;
 	z-index: 1;
@@ -65,7 +53,7 @@
 }
 
 .about-list-card::before {
-	color: #4dc274;
+	color: var(--color-green);
 	font-family: 'Manrope', sans-serif;
 	font-size: 28px;
 	font-weight: 700;
@@ -86,7 +74,7 @@
 
 .about-list-card--photo {
 	min-height: 313px;
-	background-color: #4dc274;
+	background-color: var(--color-green);
 	counter-increment: none;
 	align-items: center;
 	justify-content: center;
@@ -138,7 +126,7 @@
 		bottom: 2px;
 		left: -4px;
 	}
-	
+
 	.about-list {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 		grid-template-rows: repeat(2, 1fr);
