@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+    <title>Нова заявка на навчання</title>
+  </head>
+  <body style="margin: 0; padding: 0; background-color: #f4f4f4; color: #121417;">
+    <div
+      style="
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        color: transparent;
+      "
+    >
+      Нова заявка від {{name}} — {{phone}}
+    </div>
+
+    <table
+      role="presentation"
+      width="100%"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      style="width: 100%; background-color: #f4f4f4;"
+    >
+      <tr>
+        <td align="center" style="padding: 32px 12px;">
+          <table
+            role="presentation"
+            width="600"
+            cellspacing="0"
+            cellpadding="0"
+            border="0"
+            style="
+              width: 100%;
+              max-width: 600px;
+              overflow: hidden;
+              border-radius: 20px;
+              background-color: #ffffff;
+            "
+          >
+            <tr>
+              <td style="padding: 32px; background-color: #4dc274;">
+                <p
+                  style="
+                    margin: 0 0 8px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                  "
+                >
+                  English Excellence
+                </p>
+                <h1
+                  style="
+                    margin: 0;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 28px;
+                    line-height: 36px;
+                    color: #ffffff;
+                  "
+                >
+                  Нова заявка на навчання
+                </h1>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding: 32px;">
+                <p
+                  style="
+                    margin: 0 0 24px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #555555;
+                  "
+                >
+                  Користувач заповнив форму на сайті. Контактні дані та деталі
+                  заявки наведені нижче.
+                </p>
+
+                <table
+                  role="presentation"
+                  width="100%"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  style="
+                    width: 100%;
+                    border-collapse: separate;
+                    border-spacing: 0;
+                    border: 1px solid #e3e5e5;
+                    border-radius: 12px;
+                  "
+                >
+                  <tr>
+                    <td
+                      width="140"
+                      valign="top"
+                      style="
+                        padding: 16px;
+                        border-bottom: 1px solid #e3e5e5;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 21px;
+                        color: #7a7a7a;
+                      "
+                    >
+                      Ім’я
+                    </td>
+                    <td
+                      valign="top"
+                      style="
+                        padding: 16px;
+                        border-bottom: 1px solid #e3e5e5;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 15px;
+                        line-height: 21px;
+                        color: #121417;
+                      "
+                    >
+                      {{name}}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      width="140"
+                      valign="top"
+                      style="
+                        padding: 16px;
+                        border-bottom: 1px solid #e3e5e5;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 21px;
+                        color: #7a7a7a;
+                      "
+                    >
+                      Email
+                    </td>
+                    <td
+                      valign="top"
+                      style="
+                        padding: 16px;
+                        border-bottom: 1px solid #e3e5e5;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 15px;
+                        line-height: 21px;
+                      "
+                    >
+                      <a
+                        href="mailto:{{email}}"
+                        style="color: #2f9e55; text-decoration: underline;"
+                      >{{email}}</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      width="140"
+                      valign="top"
+                      style="
+                        padding: 16px;
+                        border-bottom: 1px solid #e3e5e5;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 21px;
+                        color: #7a7a7a;
+                      "
+                    >
+                      Телефон
+                    </td>
+                    <td
+                      valign="top"
+                      style="
+                        padding: 16px;
+                        border-bottom: 1px solid #e3e5e5;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 15px;
+                        line-height: 21px;
+                      "
+                    >
+                      <a
+                        href="tel:{{phone}}"
+                        style="color: #2f9e55; text-decoration: underline;"
+                      >{{phone}}</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      width="140"
+                      valign="top"
+                      style="
+                        padding: 16px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 21px;
+                        color: #7a7a7a;
+                      "
+                    >
+                      Викладач
+                    </td>
+                    <td
+                      valign="top"
+                      style="
+                        padding: 16px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 15px;
+                        line-height: 21px;
+                        color: #121417;
+                      "
+                    >
+                      {{teacher}}
+                    </td>
+                  </tr>
+                </table>
+
+                <h2
+                  style="
+                    margin: 28px 0 10px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #121417;
+                  "
+                >
+                  Коментар
+                </h2>
+                <div
+                  style="
+                    padding: 16px;
+                    border-radius: 12px;
+                    background-color: #f6f6f6;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 15px;
+                    line-height: 23px;
+                    white-space: pre-wrap;
+                    overflow-wrap: anywhere;
+                    color: #333333;
+                  "
+                >{{comment}}</div>
+
+                <table
+                  role="presentation"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  style="margin-top: 28px;"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      style="border-radius: 12px; background-color: #4dc274;"
+                    >
+                      <a
+                        href="mailto:{{email}}"
+                        style="
+                          display: inline-block;
+                          padding: 14px 24px;
+                          font-family: Arial, Helvetica, sans-serif;
+                          font-size: 15px;
+                          font-weight: 700;
+                          line-height: 20px;
+                          text-decoration: none;
+                          color: #ffffff;
+                        "
+                      >Відповісти заявнику</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                style="
+                  padding: 20px 32px;
+                  background-color: #121417;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 12px;
+                  line-height: 18px;
+                  color: #a8a9aa;
+                "
+              >
+                Це автоматичне повідомлення з форми «Leave an application».
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
