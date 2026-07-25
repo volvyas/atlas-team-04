@@ -61,4 +61,5 @@ This project was created through collaborative team effort by:
 - **Alisa Skrypnyk**
 - **Maryna Shavlak**
 - **Mykola Yanchev**
-- **Vlad Dzyadevich**
+- **Andrii Dotsia**
+
