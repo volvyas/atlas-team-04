@@ -38,6 +38,4 @@ document
         comment: document.getElementById('id_comment').value,
       }
     );
-
-    alert("Лист відправлено!");
   });
