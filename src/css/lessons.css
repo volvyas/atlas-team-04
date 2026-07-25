@@ -181,6 +181,7 @@
 
     .lessons-cards {
         flex-wrap: nowrap;
+        justify-content: center;
     }
 
     .lessons-item {
