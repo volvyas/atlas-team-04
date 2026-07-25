@@ -1,7 +1,6 @@
 .lessons {
-    padding: 150px 0;
+    margin: 80px 0;
 }
-
 
 .lessons-title {
     font-family: "Manrope", sans-serif;
@@ -64,23 +63,44 @@
     align-items: center;
     width: 100%;
     max-width: 335px;
+    transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .lessons-item:hover {
     background-color: var(--color-green);
-    transition: 0.3s ease;
 }
 
-.lessons-item:hover .lessons-item-subtitle {
+.lessons-item:nth-child(2) {
+    background-color: var(--color-green);
+}
+
+.lessons-item:nth-child(2) .lessons-button {
+    border: 1px solid #FFFFFF66;
+}
+
+.lessons-item:nth-child(2) .lessons-item-subtitle {
     color: var(--color-white);
 }
 
-.lessons-item:hover .lessons-item-title {
+.lessons-item:nth-child(2) .lessons-item-title {
     color: var(--color-white);
 }
 
-.lessons-item:hover .lessons-item-text {
+.lessons-item:nth-child(2) .lessons-item-text {
+    color: color-mix(in srgb, var(--color-white) 70%, transparent);
+}
+
+.lessons-item:not(:nth-child(2)):hover .lessons-item-subtitle {
     color: var(--color-white);
+}
+
+.lessons-item:not(:nth-child(2)):hover .lessons-item-title {
+    color: var(--color-white);
+}
+
+.lessons-item:not(:nth-child(2)):hover .lessons-item-text {
+    color: color-mix(in srgb, var(--color-white) 70%, transparent);
 }
 
 
@@ -138,6 +158,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .lessons {
+        margin: 80px 0;
+    }
+
     .lessons-cards {
         flex-direction: row;
         flex-wrap: wrap;
@@ -151,8 +175,13 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .lessons {
+        margin: 150px 0;
+    }
+
     .lessons-cards {
         flex-wrap: nowrap;
+        justify-content: center;
     }
 
     .lessons-item {
