@@ -68,6 +68,51 @@ emailjs.init({
   publicKey: "5zeWkXDw85VBguJij",
 });
 
+function showSuccessNotification() {
+  document.querySelector('[data-email-success]')?.remove();
+
+  const notificationEl = document.createElement('div');
+  notificationEl.dataset.emailSuccess = '';
+  notificationEl.setAttribute('role', 'status');
+  notificationEl.setAttribute('aria-live', 'polite');
+  notificationEl.textContent = 'Your application has been sent successfully!';
+
+  Object.assign(notificationEl.style, {
+    position: 'fixed',
+    top: '24px',
+    right: '16px',
+    zIndex: '1000',
+    width: 'min(360px, calc(100vw - 32px))',
+    padding: '16px 20px',
+    borderRadius: '12px',
+    backgroundColor: '#4dc274',
+    boxShadow: '0 8px 24px rgba(18, 20, 23, 0.2)',
+    color: '#ffffff',
+    fontWeight: '600',
+    lineHeight: '1.5',
+    opacity: '0',
+    transform: 'translateY(-16px)',
+    transition: 'opacity 250ms ease, transform 250ms ease',
+  });
+
+  document.body.append(notificationEl);
+
+  requestAnimationFrame(() => {
+    notificationEl.style.opacity = '1';
+    notificationEl.style.transform = 'translateY(0)';
+  });
+
+  window.setTimeout(() => {
+    notificationEl.style.opacity = '0';
+    notificationEl.style.transform = 'translateY(-16px)';
+    notificationEl.addEventListener(
+      'transitionend',
+      () => notificationEl.remove(),
+      { once: true }
+    );
+  }, 4000);
+}
+
 document
   .getElementById("application-form")
   .addEventListener("submit", async e => {
@@ -90,4 +135,7 @@ document
         comment: document.getElementById('id_comment').value,
       }
     );
+
+    showSuccessNotification();
+    e.currentTarget.reset();
   });
